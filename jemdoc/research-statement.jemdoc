@@ -1,0 +1,188 @@
+# jemdoc: menu{MENU}{research-statement.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Homepage}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Research Statement
+{{<cite>I didn't fail the test. I just found 100 ways to do it wrong - Benjamin Franklin</cite>}}
+
+Benjamin Franklin has always been an inspiration to me and his philosophy of life has 
+influenced my life journals over the past 10 years.
+#
+He was a leading author, printer, political theorist, politician, freemason,
+postmaster, scientist, inventor, humorist, civic activist, statesman, and
+diplomat.
+#
+His "never say die" and "learning from mistake" attitudes have shaped him to be
+a better man in every phase of his life, contributing greatly to his society.
+#
+I have learned from him to step outside my comfort zone and to take the risks in
+life that seem worth taking.
+#
+During my time in the graduate school, my research focuses on ultra-low
+voltage and energy efficient integrated circuit design.
+#
+After my graduation, I have decided to take a leap of faith to join GLOBALFOUNDRIES as a
+design-for-manufacturability software engineer.
+#
+The job has provided me with multiple opportunities to understand systematic and 
+random defects manufacturing issue related to the quality of layout design.
+#
+Over the duration of four years, I have involved in the development of several EDA
+softwares which have successfully differentiated GLOBALFOUNDRIES from her
+competitors.  
+
+== Next phase
+
+Moving onto the next chapter in my life, I wish to be in a place, where I can learn,
+influence, cultivate a strong multi-disciplinary research team that can help me
+to incubate my elegant ideas, formulate it succinctly and passionately strive to 
+reach the goal with scientific integrity.
+#
+With my experience in both architecture and circuits, I feel well-placed to recognize how to
+exploit new technologies for ever more efficient, reliable and high-performance integrated 
+circuit design.
+#
+Circuit design has deeply rooted in my heart since I took up this discipline a
+decade ago.
+#
+It  is an art, a science, a rare skill.
+#
+An art practiced by skilled engineers who possess the creativity and expertise 
+to construct high performance circuits from individual transistors and passive components.
+#
+I believe that I have the necessary disciplinary background and appropriate range of skills, expertise, experience and knowledge base to conduct the proposed research effectively within the available resources.
+#
+
+{{<br><div style="page-break-after:always;"></div>}}
+
+== Research opportunities
+
+~~~
+{}{img_left}{./image/research.png}{}{500}{}{}
+~~~
+
+In the recent years, wearable sensors are becoming increasingly important 
+in monitoring and delivery of healthcare interventions. 
+#
+It is important to investigate and identify challenges and critical issues related to the 
+use of wearable sensors in healthcare including; reliability, efficiency, 
+variability, cost effectiveness, energy usage, user interface, quality of 
+medical data, and security and privacy. 
+#
+I will elaborate on the various research opportunities in the subsequent paragraphs. 
+
+#Our research enables ultrasound mobile imaging at the micro-scale through pMUT-based integrated systems. Ingestible miniaturized electronic systems are also investigated for little-intrusive and accurate endoscopy. Our research also involves advanced implantable interfaces for peripheral nerve prostheses, vital sign monitoring and low-energy wireless transceivers.
+
+#My research has focused on evaluating and suggesting different directions for solving one of the
+#test challenges for Deep Sub-Micron (DSM) technologies viz. leakage current based testing of
+#integrated circuits. 
+#
+#promotes new and innovative SOC design activity that promises to advance 
+#the art of integrated circuit design in the university labs
+#I would like to take the opportunity to explore these area of research to
+#further
+
+#I am interested in designing and implementing both reconfigurable
+#and hardwired solutions to address this need
+
+#Digitally-assisted analog and analog-assisted digital techniques are increasingly needed
+#in future circuit and system designs.
+#The intrinsic features
+#of these new devices are lowering the barrier between the analog and the digital worlds,
+#allowing unprecedented performance to be achieved by assisting digital circuits with
+#analog techniques or analog circuits with digital techniques
+
+#Another trend is the transition of traditional analog
+#functions to the digital domain. Compared to their analog mixed-signal counterparts,
+#all-digital implementations are scalable, insensitive to noise, and robust against process
+#variations. On the other hand, driven by the worldwide demand for low-power application
+#processors, dynamic voltage/frequency scaling (DVFS) and adaptive voltage
+#scaling (AVS) are typically used to reduce energy consumption in mobile systems.
+#DVFS and AVS are enabled for optimal power management by analog techniques that
+#monitor the on-die process, voltage and temperature variations.
+
+#In the future, with the underlying implementation technology increasingly 
+#affecting architecture and circuit design, we must adapt and reinvent current 
+#designs to circumvent technology constraints and to target emerging applications. 
+
+#The key near term challenge is to build compute systems that can efficiently 
+#achieve high-performance, yet remain economically feasible, general-purpose, 
+#and easy to program. I am interested in designing and implementing both reconfigurable 
+#and hardwired solutions to address this need. In the long-term, with CMOS scaling 
+#approaching fundamental limits, the challenge is to build compute systems from 
+#technology building blocks that may be radically different from those we use today. 
+
+=== 1) Low power, low voltage analog and digital integrated circuit sensor design
+
+As CMOS technologies scale to smaller nodes, digital designs enjoy obvious benefits
+in terms of higher speed and lower power consumption. However, scaling doesn’t
+happen so readily or cleanly with analog designs. 
+#
+Analog circuits frequently make use of "digital assistance", which allows 
+simplification of the critical analog circuits that don't scale easily. 
+#
+Digitally-assisted analog techniques, such as calibration, allow for considerable 
+relaxation of the analog performance, which can be used for minimizing
+both area and power consumption. 
+#
+These circuit techniques allow us to design near-threshold voltage circuit for
+our wearable sensors.
+
+=== 2) Energy harvesting circuit
+
+Enabling the wearable senors, with limited or no battery, to perform biosignal acquisition
+on harvested energy is another promising research direction.	
+#
+I plan to continue research on reconfigurable circuit to allow adaptive signal
+acquisition under energy-limited condition.
+
+=== 3) Vital signs signal processing and classification
+
+To improve the energy efficient of our wearable sensors, based on past
+research works, it is important to minimize the data for transmission.
+#
+As such, we need to explore and develop energy-efficient data compression
+algorithms and vital signs abnormality detection.
+#
+On-chip machine learning is one of my key focus that I would like to investigate 
+and demonstrate “patient-specific” disease detection/suppression. 
+#
+This allows to transmit critical information during abnormality situation.
+
+Even through research on machine learnings has been on-going for the past
+years, it is still far away from integrating into wearable sensors.
+#
+My prior experience in circuit design and software programming in neural networks
+helped me to identify the missing link and propose an energy-efficient
+classification engine.
+
+=== 4) Hardware system and information security research 
+
+Till date, most of the wearable sensors have yet to address some critical
+issues and challenges related to security and privacy of data/information.
+#
+In order to protect our hardware sensors and our users' vital signs
+information, we need to leverage on manufacturing knowledge to obfuscate our 
+circuit and layout.
+#
+We also need to develop energy-efficient circuit implementation of data
+encryption algorithm to improve the security and privacy of data.
+
+=== 5) Clinical Trials
+
+In a number of scenarios user-friendliness, convenience and effectiveness 
+of wearable systems have been acknowledged by both patients as well as 
+healthcare providers. 
+#
+It requires advanced concepts and techniques from multidisciplinary fields 
+of electrical engineering, computer science, biomedical engineering and medicine 
+which benefit the innovations of these fields towards healthcare systems. 
+#
+In order for our research works become useful healthcare product, we need to
+consistently evaluate and perform clinical trials with our prototype.
+#
+The experiences will be useful for us to refine and validate our products.
+
+
