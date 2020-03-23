@@ -57,7 +57,7 @@ def switchToFirstLastNameStyle(author):
     for i, oneAuthor in enumerate(authorArray):
         if ',' in oneAuthor:
             nameArray = oneAuthor.split(',')
-            print(nameArray)
+            print nameArray
             assert len(nameArray) == 2, "len(nameArray) = %d" % len(nameArray)
             authorArray[i] = nameArray[1].strip() + ' ' + nameArray[0].strip()
         if i == 0:
@@ -102,12 +102,12 @@ def printBibDB(bibDB, highlightAuthors, suffix, header):
 
     # call kernel print functions 
     if header:
-        print(header)
+        print header
     if suffix.lower() == 'web':
-        print("""
+        print """
 = Publications
 
-""")
+"""
 
         printWeb(bibDB, stringMap, highlightAuthors, bookEntries, 'book', 'publisher')
         printWeb(bibDB, stringMap, highlightAuthors, journalEntries, 'journal', 'journal')
@@ -115,9 +115,9 @@ def printBibDB(bibDB, highlightAuthors, suffix, header):
         printWeb(bibDB, stringMap, highlightAuthors, thesisEntries, 'dissertation', 'school')
         printWeb(bibDB, stringMap, highlightAuthors, talkEntries, 'talk', 'howpublished')
     elif suffix.lower() == 'cv':
-        print("""\\begin{rSection}{Publications}
+        print """\\begin{rSection}{Publications}
 
-""")
+"""
 
         printCV(bibDB, stringMap, highlightAuthors, bookEntries, 'book', 'publisher')
         printCV(bibDB, stringMap, highlightAuthors, journalEntries, 'journal', 'journal')
@@ -125,29 +125,29 @@ def printBibDB(bibDB, highlightAuthors, suffix, header):
         printCV(bibDB, stringMap, highlightAuthors, thesisEntries, 'dissertation', 'school')
         printCV(bibDB, stringMap, highlightAuthors, talkEntries, 'talk', 'howpublished')
 
-        print("""
+        print """
 \end{rSection}
 
-""")
+"""
     else:
         assert 0, "unknown suffix = %s" % suffix
 
 def printWeb(bibDB, stringMap, highlightAuthors, entries, publishType, booktitleKey):
     prefix = ""
     if publishType == 'journal':
-        print("=== Journal Papers\n")
+        print "=== Journal Papers\n"
         prefix = "J"
     elif publishType == 'conference':
-        print("=== Conference Papers\n")
+        print "=== Conference Papers\n"
         prefix = "C"
     elif publishType == 'book':
-        print("=== Books / Book Chapters\n")
+        print "=== Books / Book Chapters\n"
         prefix = "B"
     elif publishType == 'dissertation':
-        print("=== Dissertation\n")
+        print "=== Dissertation\n"
         prefix = "PHD"
     elif publishType == 'talk':
-        print("=== Seminars / Talks\n")
+        print "=== Seminars / Talks\n"
         prefix = "P"
     # print 
     currentYear = '' 
@@ -155,7 +155,7 @@ def printWeb(bibDB, stringMap, highlightAuthors, entries, publishType, booktitle
     for i, entry in enumerate(entries):
         if not currentYear or currentYear.lower() != entry['year'].lower():
             currentYear = entry['year']
-            print("==== %s\n" % (currentYear))
+            print "==== %s\n" % (currentYear)
         # switch from [last name, first name] to [first name last name]
         author = switchToFirstLastNameStyle(entry['author'])
         if highlightAuthors: # highlight some authors 
@@ -180,70 +180,70 @@ def printWeb(bibDB, stringMap, highlightAuthors, entries, publishType, booktitle
         addressAndDate = getAddressAndDate(entry);
 
         if volume and number and pages and paper and annotate:
-            print("""- \[%s%d\] %s, "%s", %s, vol. %s, no. %s, pp. %s, %s. {{<a href=\"%s\">(paper) </a><font color=red><b>(%s)</b></font>}} """ % \
-                (prefix, count, author, title, booktitle, volume, number, pages, addressAndDate, paper, annotate));
+            print """- \[%s%d\] %s, "%s", %s, vol. %s, no. %s, pp. %s, %s. {{<a href=\"%s\">(paper) </a><font color=red><b>(%s)</b></font>}} """ % \
+                (prefix, count, author, title, booktitle, volume, number, pages, addressAndDate, paper, annotate);
         elif paper and annotate:
-            print("""- \[%s%d\] %s, "%s", %s, %s. {{<a href=\"%s\">(paper) </a><font color=red><b>(%s)</b></font>}} """ % \
-                (prefix, count, author, title, booktitle, addressAndDate, paper, annotate)); 
+            print """- \[%s%d\] %s, "%s", %s, %s. {{<a href=\"%s\">(paper) </a><font color=red><b>(%s)</b></font>}} """ % \
+                (prefix, count, author, title, booktitle, addressAndDate, paper, annotate); 
         elif preprint and annotate:
-            print("""- \[%s%d\] %s, "%s", %s, %s. {{<a href=\"%s\">(preprint) </a><font color=red><b>(%s)</b></font>}} """ % \
-                (prefix, count, author, title, booktitle, addressAndDate, preprint, annotate)); 
+            print """- \[%s%d\] %s, "%s", %s, %s. {{<a href=\"%s\">(preprint) </a><font color=red><b>(%s)</b></font>}} """ % \
+                (prefix, count, author, title, booktitle, addressAndDate, preprint, annotate); 
         elif annotate:
-            print("""- \[%s%d\] %s, "%s", %s, %s. {{<font color=red><b>(%s)</b></font>}} """ % \
-                (prefix, count, author, title, booktitle, addressAndDate, annotate));
+            print """- \[%s%d\] %s, "%s", %s, %s. {{<font color=red><b>(%s)</b></font>}} """ % \
+                (prefix, count, author, title, booktitle, addressAndDate, annotate);
         elif preprint:
-            print("""- \[%s%d\] %s, "%s", %s, %s. {{<a href=\'%s\'>(preprint)</a>}}""" % \
-                (prefix, count, author, title, booktitle, addressAndDate, preprint));
+            print """- \[%s%d\] %s, "%s", %s, %s. {{<a href=\'%s\'>(preprint)</a>}}""" % \
+                (prefix, count, author, title, booktitle, addressAndDate, preprint);
         elif volume and number and pages and paper:
-            print("""- \[%s%d\] %s, "%s", %s, vol. %s, no. %s, pp. %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
-                (prefix, count, author, title, booktitle, volume, number, pages, addressAndDate, paper));
+            print """- \[%s%d\] %s, "%s", %s, vol. %s, no. %s, pp. %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
+                (prefix, count, author, title, booktitle, volume, number, pages, addressAndDate, paper);
         elif pages and paper:
-            print("""- \[%s%d\] %s, "%s", %s, pp. %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
-                (prefix, count, author, title, booktitle, pages, addressAndDate, paper));
+            print """- \[%s%d\] %s, "%s", %s, pp. %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
+                (prefix, count, author, title, booktitle, pages, addressAndDate, paper);
         elif paper:
-            print("""- \[%s%d\] %s, "%s", %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
-                (prefix, count, author, title, booktitle, addressAndDate, paper));
+            print """- \[%s%d\] %s, "%s", %s, %s. {{<a href=\'%s\'>(paper)</a>}}""" % \
+                (prefix, count, author, title, booktitle, addressAndDate, paper);
         elif pages:
-            print("""- \[%s%d\] %s, "%s", %s, pp. %s, %s. """ % \
-                (prefix, count, author, title, booktitle, pages, addressAndDate));
+            print """- \[%s%d\] %s, "%s", %s, pp. %s, %s. """ % \
+                (prefix, count, author, title, booktitle, pages, addressAndDate);
         else:
-            print("""- \[%s%d\] %s, "%s", %s, %s. """ % \
-                (prefix, count, author, title, booktitle, addressAndDate));
-        print("""\n""");
+            print """- \[%s%d\] %s, "%s", %s, %s. """ % \
+                (prefix, count, author, title, booktitle, addressAndDate);
+        print """\n""";
         count = count-1
 
 def printCV(bibDB, stringMap, highlightAuthors, entries, publishType, booktitleKey):
     prefix = ""
     if publishType == 'journal':
-        print("""
+        print """
 \\textbf{Journal Papers}
-        """)
+        """
         prefix = "J"
     elif publishType == 'conference':
-        print("""
+        print """
 \\textbf{Conference Papers}
-        """)
+        """
         prefix = "C"
     elif publishType == 'book':
-        print("""
+        print """
 \\textbf{Books / Book Chapters}
-        """)
+        """
     elif publishType == 'dissertation':
-        print("""
+        print """
 \\textbf{Dissertation}
-        """)
+        """
         prefix = "PHD"
     elif publishType == 'talk':
-        print("""
+        print """
 \\textbf{Seminars / Talks}
-        """)
+        """
         prefix = "P"
 
 
-    print("""
+    print """
 \\begin{description}[font=\\normalfont]
 %{{{
-    """)
+    """
 
     # print 
     currentYear = '' 
@@ -267,38 +267,38 @@ def printCV(bibDB, stringMap, highlightAuthors, entries, publishType, booktitleK
             title = "\\href{" + publishlink + "}{" + title +"}"
         addressAndDate = getAddressAndDate(entry)
         if publishType == 'dissertation':
-            print("""
+            print """
 \item[{[%s]}]{
         %s, 
     ``%s'', 
     \\emph{%s}, %s.
     %s
 }
-        """ % (prefix, author, title, booktitle, addressAndDate, annotate))
+        """ % (prefix, author, title, booktitle, addressAndDate, annotate)
 
         else:
-            print("""
+            print """
 \item[{[%s%d]}]{
         %s, 
     ``%s'', 
     \\emph{%s}, %s.
     %s
 }
-        """ % (prefix, count, author, title, booktitle, addressAndDate, annotate))
+        """ % (prefix, count, author, title, booktitle, addressAndDate, annotate)
         count = count-1
 
-    print("""
+    print """
 %}}}
 \end{description}
-    """)
+    """
 
 def printHelp():
-    print("""
+    print """
 usage: python bibconvert.py --suffix suffix --highlight author1 [--highlight author2] --input 1.bib [--input 2.bib]
 suffix can be 'web' or 'cv'
     'web': jemdoc format for personal webpage 
     'cv': latex format for resume 
-""")
+"""
 
 if __name__ == "__main__":
     suffix = None

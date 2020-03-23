@@ -1,7 +1,7 @@
 #!/bin/csh -f
 
 
-cd jemdoc
+cd ./jemdoc
 make all
 cd ..
 cd cv 

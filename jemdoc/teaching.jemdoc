@@ -1,6 +1,6 @@
-# jemdoc: menu{MENU}{services.html}
+# jemdoc: menu{MENU}{teaching.html}
 # jemdoc: addcss{./jemdoc.css}
-# jemdoc: title{Services}
+# jemdoc: title{Teaching}
 # jemdoc: analytics{|}
 # jemdoc: nofooter
 
