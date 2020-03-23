@@ -44,12 +44,12 @@ There are some links to learn about jemdoc:
 
 ## 4. Update your website
 
-After changing the profile, run the command following:
+After changing the profile, run the command follow:
 
 ```shell
 ./run1.bat
 ./run2.bat
 ```
 
-Then the changes will be update to your website.
+Then the changes will be updated to your website.
 
