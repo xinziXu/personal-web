@@ -12,23 +12,23 @@ Fork jemdoc tempalte from https://github.com/MGshizi/jemdoc-template
 
 ## 2. Setting `GitHub Pages`
 
-Open the repository your just forked.
+Open the repository you just forked.
 
 - `Settings`  
 
   ![image-20200323145950184](./image/image-20200323145950184.png)
 
-- Rename the repository your like, eg: Mywebsite
+- Rename the repository you like, eg: Mywebsite
 
   ![image-20200323150318269](./image/image-20200323150318269.png)
 
-- Scroll down to `GitHub Pages` -> ①, select `master branch` in the check box below `Source` -> ②, then the page will flash automatically, and your can get the website url -> ③
+- Scroll down to `GitHub Pages` -> ①, select `master branch` in the check box below `Source` -> ②, then the page will flash automatically, and you can get the website url -> ③
 
   ![image-20200323150526799](./image/image-20200323150526799.png)
 
 ## 3. Change the template
 
-After cloning the repository you just forked and renamed to local, you can change the your website as like as you want.
+After cloning the repository you just forked and renamed to local, you can change your website as like as you want.
 
 Structure of the template:
 
