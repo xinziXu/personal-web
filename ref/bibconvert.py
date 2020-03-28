@@ -8,7 +8,12 @@
 import sys
 import re
 import datetime
-import bibtexparser 
+try:
+    import bibtexparser 
+except:
+    import os
+    os.system('pip install bibtexparser')
+    import bibtexparser
 
 def read(filenames, commentPrefix):
     # read content from bibtex files 
