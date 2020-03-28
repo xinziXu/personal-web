@@ -1,3 +1,2 @@
 cd ./jemdoc
 makefile
-pause
