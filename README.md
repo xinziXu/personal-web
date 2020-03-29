@@ -6,7 +6,7 @@
 
 ## 1. Fork template
 
-Fork jemdoc tempalte from https://github.com/MGshizi/jemdoc-template
+Fork jemdoc tempalte from https://github.com/yongfu-li/personal-profile-webpage.git
 
 ![image-20200323150759566](./image/README/image-20200323150759566.png)
 
