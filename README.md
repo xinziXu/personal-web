@@ -42,9 +42,32 @@ There are some links to learn about jemdoc:
 - https://www.jianshu.com/p/88ac1961d7d6
 - https://www.jianshu.com/p/34435af74f7e
 
-> **Attention:**
+> **PS:**
 >
-> If you have changed the content of your publication, e.g you have added or deleted the content in `publications.jemdoc`, then you should check the same 
+> If you want to add your publications in the website, you should follow the steps bellow:
+>
+> 1. Get the `BibTex` of your publication, eg, 
+>
+>    ```latex
+>    %@ARTICLE{ELL-2019-4180,
+>    %author={A. R. Mohamed and Y. Li and G. Wang},
+>    %journal={ietel},
+>    %title="{A Generic Nano-Watt Power Fully Tunable 1-D Gaussian Kernel Circuit for Neural Network}",
+>    %year={2019},
+>    %volume={},
+>    %number={},
+>    %pages={1-1},
+>    %month={},
+>    %}
+>    ```
+>
+> 2. Add the `BibTex` to `./ref/publications.bib`
+>
+> 3. Change the red part of the code in `./jemdoc/makefile.bat`:
+>
+>    > python ../ref/bibconvert.py --suffix web --highlight "$\color{red}{Y.\ Li}$" --highlight "$\color{red}{Yongfu\ Li}$" --highlight "$\color{red}{Li,\ Yongfu}$" --input ../ref/Top.bib --input ../ref/publications.bib --header publications_header.jemdoc > publications.jemdoc
+>
+>    this operation will highlight your name in `BibTex` automatically, and the format of your name will be given in the above code.
 
 
 
