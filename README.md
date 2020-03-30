@@ -22,7 +22,7 @@ Open the repository you just forked.
 
   ![image-20200323150318269](./image/README/image-20200323150318269.png)
 
-- Scroll down to `GitHub Pages` -> ①, select `master branch` in the check box below `Source` -> ②, then the page will flash automatically, and you can get the website url -> ③
+- Scroll down to `GitHub Pages` -> ②, select `master branch` in the check box below `Source` -> ①, then the page will flash automatically, and you can get the website url -> ③
 
   ![image-20200323150526799](./image/README/image-20200323150526799.png)
 
