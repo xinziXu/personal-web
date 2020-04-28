@@ -46,7 +46,7 @@ Here are some links on jemdoc for reference:
 >
 > If you want to use **Chinese characters**, change line 142 in jemdoc.py: replace **'utf-8'** with **'GBK'**. 
 > You may still have messy code after uploading the files to your repo. This can be solved by
-? - Make changes to the ".html" files with problem, commit changes, change the files back, commit changes again. If this does not work try doing it a second time.
+> - Make changes to the ".html" files with problem, commit changes, change the files back, commit changes again. If this does not work try doing it a second time.
 > - Change the encoding of your ".html" files as 'GBK' before uploading them to the repo.
 >
 > If you want to add your **publications** to the website, you should follow the steps bellow:
