@@ -5,11 +5,12 @@
 # jemdoc: nofooter
 
 ~~~
-{}{img_left}{./image/Your-image.png}{Your name}{170}{}{}
-= Your name
+{}{img_left}{./image/photo.jpg}{Xinzi Xu}{140}{}{}
+= Xinzi, Xu
 
-*E-mail:* Your email
+*E-mail:* xu_xinzi@sjtu.edu.cn
 
 ~~~
 = Biography
-Write something here.
+Hi, my name is Xinzi, Xu.\n
+I am a Phd student majoring in Electronic Engineering.
